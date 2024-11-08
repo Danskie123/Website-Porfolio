@@ -1,0 +1,775 @@
+@font-face {
+    font-family: Caslon-540;
+    src: url(./Fonts/caslon-540/Caslon-540-Regular.otf);
+}
+@font-face {
+    font-family: Ghino;
+    src: url(/Portfolio_Website/Fonts/Ghino/Demo_Fonts/Fontspring-DEMO-ghino-medium.otf);
+}
+
+
+body {
+    background-color: #FaF9F8;
+}
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 600px 200px 200px 600px 600px 350px ;
+}
+/*NAVIGATION BAR */
+
+.logo {
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+/*Body*/
+.Asclepius{
+    grid-area: 2/1/2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Asclepius img {
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #d6d6d6;
+}
+.overview-grid{
+    grid-area: 3/1/3/3;
+    display: flex;
+    justify-content: center;
+}
+.overview{
+    width: 800px;
+    
+}
+.overview h1{
+    font-family: "Ghino";
+    letter-spacing: 2px;
+    color: #363535;
+}
+.overview p{
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #525151;
+}
+.resposibilities-grid{
+    grid-area: 4/1/4/3;
+    display: flex;
+    justify-content: center;
+}
+.resposibilities{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+.role h3{
+    font-family: "Ghino";
+    letter-spacing: 2px;
+    color: #363535;
+}
+.role p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    color: #525151;
+}
+.timeline h3{
+    font-family: "Ghino";
+    letter-spacing: 2px;
+    color: #363535;
+}
+.timeline p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    color: #525151;
+}
+.tools-technologies h3{
+    font-family: "Ghino";
+    letter-spacing: 2px;
+    color: #363535;
+}
+.tools-technologies p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    color: #525151;
+}
+.team h3{
+    font-family: "Ghino";
+    letter-spacing: 2px;
+    color: #363535;
+}
+.team p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    color: #525151;
+}
+.login-grid{
+    grid-area: 5/1/5/3;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+.login-video{
+    border-radius: 10px;
+}
+.login-text{
+    width: 400px;
+    margin-left: 100px;
+}
+.login-text h2{
+    font-family: "Ghino";
+    letter-spacing: 2px;
+    color: #363535;
+}
+.login-text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #525151;
+}
+.main-grid{
+    grid-area: 6/1/6/3;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+.main-video{
+    border-radius: 10px;
+}
+.main-text{
+    width: 400px;
+    margin-right: 100px;
+}
+.main-text h2{
+    font-family: "Ghino";
+    letter-spacing: 2px;
+    color: #363535;
+}
+.main-text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #525151;
+}
+
+/*Footer*/
+.footer {
+    background: linear-gradient(#FF9C73, #FF4545);
+    grid-area: 7/1/7/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-footer {
+
+    border: 5px white solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.information-footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    border-bottom: 2px black solid;
+    width: 150px;
+
+}
+
+.vl {
+    border-left: 2px black solid;
+    height: 150px;
+}
+
+.right-info {
+    margin: 10px;
+    padding: 50px;
+}
+
+.left-info {
+    margin: 10px;
+    padding: 50px;
+    width: 300px;
+}
+
+.acc-links img {
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.acc-links img:hover {
+    filter: invert(1);
+    /* Change icon color on hover, you can use other values like brightness(), saturation() etc */
+}
+
+.left-info img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.right-info h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+.left-info p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    margin: 0;
+}
+.resume-btn {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: 200px;
+    border: none;
+    background-color: #fcf596;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+    background-color: #FF9C73;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+/*Media Query*/
+@media (max-width:374px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 300px 250px 450px 600px 600px 350px;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 40px;
+        /* Adjust to fit below your nav-bar */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+    /*Body*/
+    .Asclepius img{
+        width: 300px;
+        height: 200px;
+     }
+     .overview{
+        width: 90%;
+    }
+    .overview h1{
+        font-size: 30px;
+    }
+    .overview p{
+        font-size: 12px;
+    }
+   .resposibilities{
+    flex-direction: column;
+    width: 90%;
+   }
+   .login{
+    flex-direction: column;
+    align-items: center;
+   }
+   .login-video{
+    height: 300px;
+   }
+   .login-text{
+    margin-left: 0;
+    width: 90%;
+   }
+   .login-text h2{
+    font-size: 20px;
+   }
+   .login-text p{
+    font-size: 12px;
+    
+   }
+   .main{
+    flex-direction: column;
+    align-items: center;
+   }
+   .main-video{
+    height: 300px;
+    order: -1;
+   }
+   .main-text{
+    margin-right: 0;
+    width: 90%;
+   }
+   .main-text h2{
+    font-size: 20px;
+   }
+   .main-text p{
+    font-size: 12px;
+    
+   }
+
+    /*Footer*/
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+    .information-footer{
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+    .right-info h1{
+        font-size: 20px;
+    }
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+        margin-top: -50px;
+    }
+    .right-info{
+        margin: 0;
+        padding: 0;
+    }
+    .left-info{
+        margin-left: 100px;
+        padding: 0;
+    }
+
+    .vl{
+        height: 0;
+    }
+    .resume-btn{
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 375px) and (max-width:425px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 300px 250px 450px 600px 600px 350px;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 40px;
+        /* Adjust to fit below your nav-bar */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+    /*Body*/
+    .Asclepius img{
+        width: 300px;
+        height: 200px;
+     }
+     .overview{
+        width: 90%;
+    }
+    .overview h1{
+        font-size: 30px;
+    }
+    .overview p{
+        font-size: 12px;
+    }
+   .resposibilities{
+    flex-direction: column;
+    width: 90%;
+   }
+   .login{
+    flex-direction: column;
+    align-items: center;
+   }
+   .login-video{
+    height: 300px;
+   }
+   .login-text{
+    margin-left: 0;
+    width: 90%;
+   }
+   .login-text h2{
+    font-size: 20px;
+   }
+   .login-text p{
+    font-size: 12px;
+    
+   }
+   .main{
+    flex-direction: column;
+    align-items: center;
+   }
+   .main-video{
+    height: 300px;
+    order: -1;
+   }
+   .main-text{
+    margin-right: 0;
+    width: 90%;
+   }
+   .main-text h2{
+    font-size: 20px;
+   }
+   .main-text p{
+    font-size: 12px;
+    
+   }
+
+    /*Footer*/
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+    .information-footer{
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+    .right-info h1{
+        font-size: 20px;
+    }
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+        margin-top: -50px;
+    }
+    .right-info{
+        margin: 0;
+        padding: 0;
+    }
+    .left-info{
+        margin-left: 100px;
+        padding: 0;
+    }
+
+    .vl{
+        height: 0;
+    }
+    .resume-btn{
+        width: 150px;
+        height: 50px;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 400px 200px 450px 600px 600px 350px;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 40px;
+        /* Adjust to fit below your nav-bar */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+    /*Body*/
+    .Asclepius img{
+        width: 500px;
+        height: 300px;
+     }
+     .overview{
+        width: 90%;
+    }
+    .overview h1{
+        font-size: 30px;
+    }
+    .overview p{
+        font-size: 12px;
+    }
+   .resposibilities{
+    flex-direction: column;
+    width: 90%;
+   }
+   .login{
+    flex-direction: column;
+    align-items: center;
+   }
+   .login-video{
+    height: 300px;
+   }
+   .login-text{
+    margin-left: 0;
+
+   }
+   .login-text h2{
+    font-size: 20px;
+   }
+   .login-text p{
+    font-size: 12px;
+    
+   }
+   .main{
+    flex-direction: column;
+    align-items: center;
+   }
+   .main-video{
+    height: 300px;
+    order: -1;
+   }
+   .main-text{
+    margin-right: 0;
+   }
+   .main-text h2{
+    font-size: 20px;
+   }
+   .main-text p{
+    font-size: 12px;
+    
+   }
+
+    /*Footer*/
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+        margin-top: -50px;
+    }
+    .right-info{
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    .left-info{
+        padding-left: 10px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 600px 200px 200px 600px 600px 350px ;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        /* Adjust to fit below your nav-bar */
+        right: -50;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+
+   
+
+    /*Footer*/
+    
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1025px) {}

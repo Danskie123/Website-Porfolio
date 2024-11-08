@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio | Jeliel Go</title>
+    <link href="./style.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+
+<body>
+<div class="container">
+ <!-- Navigation Bar-->
+<div class="nav-bar">
+    <div class="bar">
+        <a href="./index.html" class="logo">
+            <img src="./Images/Logo.png" height="50">
+        </a>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+</div>
+<!-- Navigation Links -->
+<div class="links">
+    <ul id="nav-links">
+        <li><a href="./index.html" class="home">Home</a></li>
+        <li><a href="" class="resume">Resume</a></li>
+        <li><a href="javascript:void(0);" class="about">About</a></li>
+        <li><a href="javascript:void(0);" class="contact" onclick="scrollToFooter()">Contact</a></li>
+
+    </ul>
+</div>
+
+
+<!--Hero-->
+<div class="hero" data-aos="fade-up">
+    <div class="pic">
+        <img src="./Images/Profile.jpg" height="560" width="420">
+    </div>
+    <div class="right-text">
+        <div class="Intro">
+            <h1>Hi!</h1>
+            <h1>I'm Jeliel Go</h1>
+            <div class="paragraph">
+                <p>
+                    Seeking a challenging computer engineering role to utilize my technical skills, problem-solving
+                    abilities, and innovative mindset in creating efficient, high-performance solutions that enhance user
+                    experiences.
+                </p>
+            </div>
+            <button class="view-work">View Work</button>
+        </div>
+    </div>
+</div>
+<!--Projects-->
+    <div class="projects" data-aos="fade-right">
+        <h1>Projects</h1>
+    </div>
+    <div class="image-grid" data-aos="fade-right">
+        <div class="image">
+            <div class="card">
+                <a href="javascript:void(0);">
+                    <img src="./Images/line-follower.jpg" alt="line-follower" class="line-follower">
+                    <div class="container-details">
+                        <h4><b>LINE FOLLOWER ROBOT USING ESP32 </b></h4>
+                        <p>Designed, built, and programmed an autonomous robot with obstacle avoidance, UV disinfection, room identification, and delivery functions. Utilized Fusion 360 for 3D modeling.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="javascript:void(0);">
+                    <img src="./Images/mini-cooler.jpg" alt="mini-cooler" class="mini-cooler">
+                    <div class="container-details">
+                        <h4><b>ARDUINO BASED MINI COOLER</b></h4>
+                        <p>Designed, 3D-printed, and programmed an Arduino-based mini cooler using Fusion 360 for efficient cooling performance.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="javascript:void(0);">
+                    <img src="./Images/Asclepius.png" alt="Asclepius mobile application" class="Asclepius">
+                    <div class="container-details">
+                        <h4><b>ASCLEPIUS MOBILE APPLICATION</b></h4>
+                        <p>Developed a comprehensive mobile application using Flutter and Firebase to manage data storage, transmission, and real-time updates.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<!--Experience-->
+    <div class="experience" data-aos="fade-left">
+        <h1>Experience</h1>
+    </div>
+    <div class="grid-experience" data-aos="fade-left">
+        <div class="card-experience">
+            <div class="image-experience">
+                <img src="./Images/Taskus.jpg">
+                <div class="container-experience">
+                    <h2> July 2023 - August 2023</h2>
+                    <h1> IT Operations - IT Asset Management Intern</h1>
+                    <h3>TaskUs | 3rd Floor Supima Square Bldg. 1, Meycauayan, Bulacan</h3>
+                    <p> Asset Management, PC Unit Repair and Maintenance, Account Administration, Client
+                        Relations, Component Testing and Quality Control
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Footer-->
+        
+<div class="footer" data-aos="fade-up">
+    <img src="./Images/prfile-footer.jpg" class="profile-footer">
+    <div class="information-footer">
+        <div class="right-info">
+            <h1>Jeliel Go</h1>
+            <div class="line"></div>
+            <div class="acc-links">
+                <a href=""><img src="./icons/facebook.png" class="facebook"></a>
+                <a href=""><img src="./icons/linkedin.png" class="linkin"></a>
+                <a href=""><img src="./icons/instagram.png" class="instagram"></a>
+            </div>
+        </div>
+        <div class="vl">
+        </div>
+        <div class="left-info">
+            <div class="contact-info">
+                <img src="./icons/telephone-handle-silhouette.png" class="contact-number">
+                <p>09327247708</p>
+            </div>
+            <div class="contact-info">
+                <img src="./icons/email.png" class="email">
+                <p>jelielgo04@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <img src="./icons/location.png" class="address">
+                <p>Blk 7 Lot 25 Grapes St. Natividad Townhomes Punturin Val. City</p>
+            </div>
+            <button class="resume-btn">Resume</button>
+        </div>
+    </div>
+</div>
+
+    
+    
+</div>
+
+<!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Include your JavaScript file here -->
+<script src="script.js"></script>
+
+</body>
+
+</html>

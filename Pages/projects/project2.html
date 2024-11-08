@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/Portfolio_Website/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/Portfolio_Website/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Portfolio_Website/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/Portfolio_Website/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Portfolio_Website/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/Portfolio_Website/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/Portfolio_Website/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/Portfolio_Website/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Portfolio_Website/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Portfolio_Website/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Portfolio_Website/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/Portfolio_Website/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Portfolio_Website/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Portfolio_Website/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/Portfolio_Website/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio | Jeliel Go</title>
+    <link href="/Portfolio_Website/Pages/projects/project2_style.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar-->
+        <div class="nav-bar">
+            <div class="bar">
+                <a href="/Portfolio_Website/index.html" class="logo">
+                    <img src="/Portfolio_Website/Images/Logo.png" height="50">
+                </a>
+                <!-- Hamburger Icon -->
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </div>
+        </div>
+        <!-- Navigation Links -->
+        <div class="links">
+            <ul id="nav-links">
+                <li><a href="/Portfolio_Website/index.html" class="home">Home</a></li>
+                <li><a href="" class="resume">Resume</a></li>
+                <li><a href="javascript:void(0);" class="about">About</a></li>
+                <li><a href="javascript:void(0);" class="contact" onclick="scrollToFooter()">Contact</a></li>
+            </ul>
+        </div>
+        <!--Body-->
+        <div class="mini-cooler" data-aos="fade-up">
+            <img src="./projects_image/mini cooler.png">
+        </div>
+        <div class="overview-grid" data-aos="fade-up">
+            <div class="overview">
+                <h1>Overview</h1>
+                <p>
+                    For our 3LP subject, we developed an Arduino-based mini-cooler. This device uses an Arduino microcontroller
+                    to control the motor speed and an LCD screen to display the current mode. To cool the air, users can place
+                    an ice pack in a designated compartment at the back of the device.
+                </p>
+            </div>
+        </div>
+        <div class="resposibilities-grid" data-aos="zoom-out">
+            <div class="resposibilities">
+                <div class="role">
+                    <h3>Role</h3>
+                    <p>Programmer</p>
+                    <p>Circuit Designer</p>
+                    <p>3d Designer</p>
+                </div>
+                <div class="timeline">
+                    <h3>Timeline</h3>
+                    <p>1 Months</p>
+                </div>
+                <div class="tools-technologies">
+                    <h3>Tools and Technologies</h3>
+                    <p>Arduino</p>
+                    <p>C++</p>
+                    <p>Fusion 360</p>
+                </div>
+                <div class="team">
+                    <h3>Team Members</h3>
+                    <p>All Engineering Students</p>
+                </div>
+            </div>
+        </div>
+        <div class="problem-grid" data-aos="zoom-out">
+            <div class="problem">
+                <h1>Problem</h1>
+                <p>
+                    Our teacher challenged us to design a small, portable, and affordable cooler that could be used anywhere.
+                    The goal was to create a cooling solution that was both easy to build and cost-effective and also energy
+                    efficient
+                </p>
+            </div>
+        </div>
+        <div class="solution-grid" data-aos="zoom-out">
+            <div class="solution">
+                <h1>Solution</h1>
+                <p>
+                    To achieve a portable and affordable solution, we opted for a 3D-printed casing designed using Fusion 360.
+                    This approach made the device easy to build and customize. An Arduino Uno microcontroller was chosen for its
+                    beginner-friendliness, controlling the device's operations. An LCD screen was integrated to provide clear
+                    visual feedback on the current mode, enhancing user experience. To make it more sustainable, we added a
+                    solar panel for free charging.
+                </p>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer" data-aos="fade-up">
+            <img src="/Portfolio_Website/Images/prfile-footer.jpg" class="profile-footer">
+            <div class="information-footer">
+                <div class="right-info">
+                    <h1>Jeliel Go</h1>
+                    <div class="line"></div>
+                    <div class="acc-links">
+                        <a href=""><img src="/Portfolio_Website/icons/facebook.png" class="facebook"></a>
+                        <a href=""><img src="/Portfolio_Website/icons/linkedin.png" class="linkin"></a>
+                        <a href=""><img src="/Portfolio_Website/icons/instagram.png" class="instagram"></a>
+                    </div>
+                </div>
+                <div class="vl">
+                </div>
+                <div class="left-info">
+                    <div class="contact-info">
+                        <img src="/Portfolio_Website/icons/telephone-handle-silhouette.png" class="contact-number">
+                        <p>09327247708</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="/Portfolio_Website/icons/email.png" class="email">
+                        <p>jelielgo04@gmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="/Portfolio_Website/icons/location.png" class="address">
+                        <p>Blk 7 Lot 25 Grapes St. Natividad Townhomes Punturin Val. City</p>
+                    </div>
+                    <button class="resume-btn">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/Portfolio_Website/Pages/projects/project1_script.js"></script>
+</body>
+
+</html>

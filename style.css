@@ -1,0 +1,974 @@
+@font-face {
+    font-family: Caslon-540;
+    src: url(./Fonts/caslon-540/Caslon-540-Regular.otf);
+}
+
+body {
+    background-color: #FaF9F8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 700px 90px 450px 90px 450px 350px;
+}
+
+/*NAVIGATION BAR */
+
+.logo {
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/*HERO*/
+.hero {
+    grid-area: 2/1/2/3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic img {
+    border-radius: 25px;
+    box-shadow: -70px 50px #fcf596;
+}
+
+.right-text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Caslon-540";
+}
+
+.Intro h1 {
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.paragraph {
+    height: 100px;
+    width: 600px;
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.view-work {
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: "Caslon-540";
+    font-size: 20px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.view-work:hover {
+    cursor: pointer;
+    background-color: rgb(56, 56, 56);
+    color: #FaF9F8;
+    transform: scale(1.05);
+}
+
+/*Cards */
+.projects {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-area: 3/1/3/1;
+    margin-left: 100px;
+}
+
+.projects h1 {
+    font-family: "Caslon-540";
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+
+.image-grid {
+    grid-area: 4/1/4/3;
+}
+
+.image {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.card {
+
+    width: 300px;
+
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    width: 300px;
+    height: 190px;
+}
+
+.card:hover {
+    box-shadow: -50px 20px #FBD288;
+}
+
+.container-details {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.line-follower {
+    object-position: 50% 60%;
+}
+
+.Asclepius {
+    object-position: 50% 40%;
+}
+
+/*Experience*/
+
+.experience {
+    display: flex;
+    justify-content: right;
+    grid-area: 5/2/5/3;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.experience h1 {
+    font-family: "Caslon-540";
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.grid-experience {
+    grid-area: 6/1/6/3;
+}
+
+.card-experience {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image-experience {
+    background-color: #FF9C73;
+    display: flex;
+    width: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-experience img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.container-experience {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+}
+
+/*Footer*/
+.footer {
+    background: linear-gradient(#FF9C73, #FF4545);
+    grid-area: 7/1/7/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-footer {
+
+    border: 5px white solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.information-footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    border-bottom: 2px black solid;
+    width: 150px;
+
+}
+
+.vl {
+    border-left: 2px black solid;
+    height: 150px;
+}
+
+.right-info {
+    margin: 10px;
+    padding: 50px;
+}
+
+.left-info {
+    margin: 10px;
+    padding: 50px;
+    width: 300px;
+}
+
+.acc-links img {
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.acc-links img:hover {
+    filter: invert(1);
+    /* Change icon color on hover, you can use other values like brightness(), saturation() etc */
+}
+
+.left-info img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.right-info h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+.left-info p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.resume-btn {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: 200px;
+    border: none;
+    background-color: #fcf596;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+    background-color: #FF9C73;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*Media Query*/
+@media (max-width:374px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 800px 90px 1000px 90px 650px 400px;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 40px;
+        /* Adjust to fit below your nav-bar */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+
+    /*Hero*/
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic img {
+        height: 300px;
+        width: 220px;
+        box-shadow: -30px 20px #fcf596;
+    }
+
+    .Intro h1 {
+        font-size: 30px;
+        /* Further reduce heading size */
+        letter-spacing: 3px;
+    }
+
+    .right-text {
+        margin: 50px;
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .view-work {
+        margin-top: 80px;
+        padding: 10px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    /*Projects*/
+    .projects h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card img {
+        width: 300px;
+    }
+
+    .container-details p {
+        font-size: 0px;
+    }
+
+    /*Experience*/
+    .experience h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .image-experience {
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        height: 500px;
+
+    }
+
+    .image-experience img {
+        width: 250px;
+        /* Make the image take the full width of the container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .container-experience {
+        text-align: center;
+        font-size: 13px;
+    }
+    /*Footer*/
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+    .information-footer{
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+    .right-info h1{
+        font-size: 20px;
+    }
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+        margin-top: -50px;
+    }
+    .right-info{
+        margin: 0;
+        padding: 0;
+    }
+    .left-info{
+        margin-left: 100px;
+        padding: 0;
+    }
+
+    .vl{
+        height: 0;
+    }
+    .resume-btn{
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 375px) and (max-width:425px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 700px 90px 1000px 90px 650px 400px;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 40px;
+        /* Adjust to fit below your nav-bar */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+
+    /*Hero*/
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic img {
+        height: 300px;
+        width: 220px;
+        box-shadow: -30px 20px #fcf596;
+    }
+
+    .Intro h1 {
+        font-size: 30px;
+        /* Further reduce heading size */
+        letter-spacing: 3px;
+    }
+
+    .right-text {
+        margin: 50px;
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .view-work {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    /*Projects*/
+    .projects h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card img {
+        width: 300px;
+    }
+
+    .container-details p {
+        font-size: 0px;
+    }
+
+    /*Experience*/
+    .experience h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .image-experience {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+
+    }
+
+    .image-experience img {
+        width: 300px;
+        /* Make the image take the full width of the container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .container-experience {
+        text-align: center;
+        font-size: 13px;
+    }
+    /*Footer*/
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+    .information-footer{
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+    .right-info h1{
+        font-size: 20px;
+    }
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+        margin-top: -50px;
+    }
+    .right-info{
+        margin: 0;
+        padding: 0;
+    }
+    .left-info{
+        margin-left: 100px;
+        padding: 0;
+    }
+
+    .vl{
+        height: 0;
+    }
+    .resume-btn{
+        width: 150px;
+        height: 50px;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 700px 90px 1000px 90px 650px 400px;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 40px;
+        /* Adjust to fit below your nav-bar */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+
+    /*Hero*/
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic img {
+        height: 300px;
+        width: 220px;
+        box-shadow: -30px 20px #fcf596;
+    }
+
+    .Intro h1 {
+        font-size: 30px;
+        /* Further reduce heading size */
+        letter-spacing: 3px;
+    }
+
+    .right-text {
+        margin: 50px;
+
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .view-work {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    /*Projects*/
+    .projects h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card img {
+        width: 300px;
+    }
+
+    .container-details p {
+        font-size: 0px;
+    }
+
+    /*Experience*/
+    .experience h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .image-experience {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+
+    }
+
+    .image-experience img {
+        width: 300px;
+        /* Make the image take the full width of the container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .container-experience {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    /*Footer*/
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+        margin-top: -50px;
+    }
+    .right-info{
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    .left-info{
+        padding-left: 10px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 900px 90px 350px 90px 450px 350px;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        /* Adjust to fit below your nav-bar */
+        right: -50;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start position above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        z-index: 10;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    /* Show menu when active */
+    .links ul.active {
+        display: flex;
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Slide down to original position */
+    }
+
+    /*Hero*/
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic img {
+        height: 400px;
+        width: 300px;
+        box-shadow: -50px 30px #fcf596;
+    }
+
+    .Intro h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .view-work {
+        padding: 12px;
+        font-size: 18px;
+        width: 180px;
+    }
+
+    /*Projects*/
+    .projects h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    .container-details p {
+        font-size: 0px;
+    }
+
+    /*Experience*/
+    .experience h1 {
+        font-size: 40px;
+        /* Reduce heading size */
+        letter-spacing: 4px;
+    }
+
+    .image-experience {
+        width: 600px;
+        height: 300px;
+    }
+
+    .image-experience img {
+        width: 300px;
+    }
+
+    .container-experience {
+        font-size: 14px;
+    }
+
+    /*Footer*/
+    .right-info h1 {
+        font-size: 35px;
+    }
+
+    .acc-links img {
+        margin: 5px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .profile-footer {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1025px) {}

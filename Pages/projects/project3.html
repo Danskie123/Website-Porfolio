@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/Portfolio_Website/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/Portfolio_Website/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Portfolio_Website/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/Portfolio_Website/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Portfolio_Website/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/Portfolio_Website/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/Portfolio_Website/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/Portfolio_Website/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Portfolio_Website/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Portfolio_Website/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Portfolio_Website/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/Portfolio_Website/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Portfolio_Website/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Portfolio_Website/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/Portfolio_Website/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio | Jeliel Go</title>
+    <link href="/Portfolio_Website/Pages/projects/project3_style.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar-->
+        <div class="nav-bar">
+            <div class="bar">
+                <a href="/Portfolio_Website/index.html" class="logo">
+                    <img src="/Portfolio_Website/Images/Logo.png" height="50">
+                </a>
+                <!-- Hamburger Icon -->
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </div>
+        </div>
+        <!-- Navigation Links -->
+        <div class="links">
+            <ul id="nav-links">
+                <li><a href="/Portfolio_Website/index.html" class="home">Home</a></li>
+                <li><a href="" class="resume">Resume</a></li>
+                <li><a href="javascript:void(0);" class="about">About</a></li>
+                <li><a href="javascript:void(0);" class="contact" onclick="scrollToFooter()">Contact</a></li>
+            </ul>
+        </div>
+        <!--Body-->
+        <div class="Asclepius" data-aos="fade-up">
+            <img src="./projects_image/app.png">
+        </div>
+        <div class="overview-grid" data-aos="fade-up">
+            <div class="overview">
+                <h1>Overview</h1>
+                <p>
+                    As part of a collaborative effort, I developed the Asclepius application. This app is designed to monitor
+                    medication intake and is built using Flutter for the frontend and Firebase for the backend. By utilizing
+                    these technologies, we were able to create a robust and user-friendly solution.
+                    Roles and Responsibilities
+                </p>
+            </div>
+        </div>
+        <div class="resposibilities-grid" data-aos="zoom-out">
+            <div class="resposibilities">
+                <div class="role">
+                    <h3>Role</h3>
+                    <p>Programmer</p>
+                </div>
+                <div class="timeline">
+                    <h3>Timeline</h3>
+                    <p>1 Months</p>
+                </div>
+                <div class="tools-technologies">
+                    <h3>Tools and Technologies</h3>
+                    <p>Flutter</p>
+                    <p>Andriod Studio</p>
+                    <p>Firebase</p>
+                </div>
+                <div class="team">
+                    <h3>Team Members</h3>
+                    <p>Me, myself</p>
+                </div>
+            </div>
+        </div>
+        <div class="login-grid" data-aos="fade-left">
+            <div class="login">
+                <video src="./video/login.mp4" class="login-video" height="500" autoplay loop muted>
+                </video>
+                <div class="login-text">
+                    <h2>Log In</h2>
+                    <p>Upon initial launch, users are presented with a login screen. Here, they can input their email address
+                        and password. Successful authentication grants access to the home page.</p>
+                </div>
+        
+            </div>
+        </div>
+        <div class="main-grid" data-aos="fade-right">
+            <div class="main">
+                <div class="main-text">
+                    <h2>Home</h2>
+                    <p>
+                        The home page provides a clear overview of the user's medication intake history, displaying the time and
+                        date of each entry. A convenient search bar is located at the top of the app, allowing users to access a
+                        calendar view. By selecting a specific date, they can easily view their medication intake for that
+                        particular day.
+                    </p>
+                </div>
+                <video src="./video/home.mp4" class="main-video" height="500" autoplay loop muted>
+                </video>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer" data-aos="fade-up">
+            <img src="/Portfolio_Website/Images/prfile-footer.jpg" class="profile-footer">
+            <div class="information-footer">
+                <div class="right-info">
+                    <h1>Jeliel Go</h1>
+                    <div class="line"></div>
+                    <div class="acc-links">
+                        <a href=""><img src="/Portfolio_Website/icons/facebook.png" class="facebook"></a>
+                        <a href=""><img src="/Portfolio_Website/icons/linkedin.png" class="linkin"></a>
+                        <a href=""><img src="/Portfolio_Website/icons/instagram.png" class="instagram"></a>
+                    </div>
+                </div>
+                <div class="vl">
+                </div>
+                <div class="left-info">
+                    <div class="contact-info">
+                        <img src="/Portfolio_Website/icons/telephone-handle-silhouette.png" class="contact-number">
+                        <p>09327247708</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="/Portfolio_Website/icons/email.png" class="email">
+                        <p>jelielgo04@gmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="/Portfolio_Website/icons/location.png" class="address">
+                        <p>Blk 7 Lot 25 Grapes St. Natividad Townhomes Punturin Val. City</p>
+                    </div>
+                    <button class="resume-btn">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/Portfolio_Website/Pages/projects/project1_script.js"></script>
+</body>
+
+</html>
